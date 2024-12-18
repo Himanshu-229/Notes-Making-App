@@ -1,0 +1,161 @@
+
+.notesContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e8f0ff;
+  }
+  
+  .notesPage{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+  .notesHeader {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #16008B;
+    color: white;
+  }
+  .compnentContainer{
+    position: relative;
+  }
+
+  
+  .notesAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #334fb4;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .notesTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .notesScrollable {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .noteCard {
+    background-color: white;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .noteCard p {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .noteTimestamp {
+    display: flex;
+        color: #747272;
+        font-size: 0.8rem;
+        margin-top: 8px;
+        justify-content: flex-end;
+    }
+  
+
+.notesInputContainer {
+    display: flex;
+    padding: 10px;
+    background-color: #00237d; 
+    align-items: center;
+    min-height: 20%;
+  }
+  
+  .notesInput {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    min-height: 70%;
+    position: relative;
+  }
+  
+  .notesInput::placeholder {
+    color: #aaa;
+    align-items: start; 
+  }
+  
+  .sendButton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%; 
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 15px;
+    bottom: 20px;
+    overflow-y: auto;
+  }
+  
+  .sendButton::after {
+    content: "➤";
+    color: #ABABAB;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  
+@media only screen and (max-width: 768px) {
+    .compnentContainer {
+        display: none;
+      }
+      .notesPage{
+        display: inline;
+      }
+      .notesInputContainer {
+        min-height: 10%;
+      }
+      .notesInput {
+       min-height: 50%;
+      }
+      .notesHeader{
+        padding: 10px;
+      }
+      .notesTitle {
+        font-size: 1.3rem;
+      }
+      .backbtn{
+        font-size: 1.2rem;
+        font-weight:bold;
+        line-height: 2;
+        padding: 0px;
+        margin-left: -4px;
+        margin-right: 8px;
+        text-align: center;
+      }
+      .notesHeader a{
+        text-decoration: none;
+        color: white;
+      }
+}
+
+@media only screen and (min-width: 1024px)  {
+    .backbtn{
+        display: none;
+      }
+}

@@ -1,0 +1,119 @@
+.homeContainer {
+  display: flex;
+  background-color: #dae5f5;
+  position: relative;
+}
+
+.contentWrapper {
+  width: 75%;
+  padding: 10px;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.encryptionInfo {
+  position: absolute;
+  bottom: 40px;
+}
+
+.groupBar {
+  background-color: white;
+}
+
+.groupBarWrapper {
+  position: relative;
+  max-height: 100vh;
+  min-height: 100vh;
+  width: 25%;
+  background-color: white;
+}
+
+.header {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.groupList {
+  padding: 10px;
+  overflow: auto;
+}
+
+.groupNameContainer {
+  display: flex;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.shortName {
+  padding: 10px;
+  margin: 12px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.groupName {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.floating-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #16008B;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+.groupList a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+.groupNameContainer:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+@media only screen and (max-width: 768px) {
+  .groupBarWrapper {
+    width: 100%;
+  }
+
+  .contentWrapper {
+    display: none;
+  }
+
+  .floating-button {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
+}

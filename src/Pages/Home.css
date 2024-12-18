@@ -1,0 +1,61 @@
+/* Base styles for larger screens (Laptop & Tablet) */
+
+    .homeContainer {
+      display: flex;
+      background-color: #dae5f5;
+      height: 100vh; 
+    }
+    
+    
+  
+    .contentWrapper {
+      width: 75%; 
+      padding: 10px;
+      height: 100vh; 
+      position: relative;
+      align-items: center;
+
+    }
+
+  
+    .backgroundImage {
+      padding: 10px;
+      margin-top: 20px;
+      width: 550px;
+    }
+  
+    .title {
+      padding: 10px;
+    }
+  
+    .description {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+  
+    .encryptionInfo {
+      position: absolute;
+      bottom: 20px;
+      left: 56%;
+    }
+  
+    .lockIcon {
+      width: 12px;
+      margin-right: 5px;
+    }
+ 
+
+  @media only screen and (max-width: 768px) {
+    .homeContainer {
+      display: block; 
+    }
+  
+    .groupBarWrapper {
+      width: 100%; 
+    }
+  
+    .contentWrapper {
+      display: none; 
+    }
+  }
+  

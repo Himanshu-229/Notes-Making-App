@@ -1,0 +1,101 @@
+.modalWrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+  }
+  
+  .UserModalContainer {
+    position: relative;
+    text-align: start;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 30%;
+    z-index: 1000;
+  }
+  
+  .ModalDivLayout {
+    vertical-align: middle;
+    border-bottom: 0.5px solid lightgray;
+    padding: 30px 22px 20px;
+  }
+  
+  .colorBox {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .input-tag {
+    width: 60%;
+    margin-left: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    border: 0.5px solid;
+  }
+  
+  .btn-container button {
+    padding: 5px 20px;
+    background-color: #16008b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .UserModalContainer {
+      width: 80%;
+      padding: 15px;
+    }
+  
+    .colorBox {
+      width: 20px;
+      height: 20px;
+      margin-left: 3px;
+    }
+  
+    .input-tag {
+      width: 100%;
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .btn-container button {
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .UserModalContainer {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .colorBox {
+      width: 18px;
+      height: 18px;
+      margin-left: 3px;
+    }
+  
+    .input-tag {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .btn-container button {
+      padding: 12px 20px;
+    }
+  }
+  
